@@ -1,52 +1,52 @@
 @import "./variables";
 
 .no-results {
-    background-color: $off-white;
-    color: $light-gray;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 9%;
+  background-color: $off-white;
+  color: $light-gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 9%;
 
-    &-text {
-        width: 50vw;
-    
-        > h2 {
-            font-size: 3.8rem;
-            line-height: 3.7rem;
+  &-text {
+    width: 50vw;
 
-            @media (max-width: $screen-md) {
-                font-size: 2.8rem;
-                line-height: 2.7rem;
-            }
-        }
+    > h2 {
+      font-size: 3.8rem;
+      line-height: 3.7rem;
 
-        > p {
-            font-size: 1.6rem;
-            margin-top: 5%;
+      @media (max-width: $screen-md) {
+        font-size: 2.8rem;
+        line-height: 2.7rem;
+      }
+    }
 
-            @media (max-width: $screen-md) {
-                font-size: 1.2rem;
-                width: 90%;
-                margin-top: 8%;
-                margin-bottom: 8%;
-            }
-        }
+    > p {
+      font-size: 1.6rem;
+      margin-top: 5%;
 
-        @media (max-width: $screen-xs) {
-            width: 70vw;
-        }
+      @media (max-width: $screen-md) {
+        font-size: 1.2rem;
+        width: 90%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+      }
     }
 
     @media (max-width: $screen-xs) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 9%;
+      width: 70vw;
     }
+  }
 
-    &-hidden {
-        display: none;
-    }
+  @media (max-width: $screen-xs) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 9%;
+  }
+
+  &-hidden {
+    display: none;
+  }
 }
