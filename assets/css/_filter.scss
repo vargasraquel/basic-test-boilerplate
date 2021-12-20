@@ -5,8 +5,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 9% 5%;
+  padding: 9% 5%;
   font-size: 1.3rem;
+  background-color: $white;
 
   select {
     margin-top: 10%;
