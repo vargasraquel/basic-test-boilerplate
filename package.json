@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "parcel": "1.12.4",
+    "reefjs": "^11.0.1",
     "surge": "^0.23.0"
   },
   "devDependencies": {

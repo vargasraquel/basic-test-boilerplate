@@ -1,0 +1,140 @@
+@import "./variables";
+.hero {
+    background-color: $light-green;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    overflow-x: hidden;
+    
+    @media (max-width: $screen-md) {
+        align-items: center;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    @media (max-width: $screen-xs) {
+        flex-direction: column;
+    }
+
+    .left-leaves {
+        z-index: 0;
+        height: 60vh;
+
+        @media (max-width: $screen-md) {
+            height: 25vh;
+        }
+
+        @media (max-width: $screen-xs) {
+            transform: rotate(90deg);
+            height: 100vw;
+        }
+    }
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+                
+        .logo {
+            top: 5vh;
+            left: 15%;
+            position: absolute;
+            z-index: 1;
+
+            @media (max-width: $screen-md) {
+                top: 2vh;
+                left: 5%;
+                width: 15%;
+            }
+            @media (max-width: $screen-xs) {
+                width: 50%;
+                top: 5vh;
+                left: 10%;
+            }
+        }
+
+        > h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: $white;
+            width: 400px;
+            position: absolute;
+            left: 15%;
+            top: 10vh;
+
+            @media (max-width: $screen-md) {
+                font-size: 2.5rem;
+                left: 5%;
+                top: 5vh;
+            }
+
+            @media (max-width: $screen-xs) {
+                font-size: 3rem;
+                line-height: 60px;
+                width: 300px;
+                left: 10%;
+                top: 10vh;
+            }
+        }
+
+        .arrow {
+            position: absolute;
+            left: 15%;
+            top: 50vh;
+
+            @media (max-width: $screen-md) {
+                top: 20vh;
+                left: 5%;
+                height: 10%;
+            }
+
+            @media (max-width: $screen-xs) {
+                top: 45vh;
+                left: 10%;
+                height: 8%;
+            }
+        }
+    }
+
+    &-person {
+        align-self: center;
+
+        > img {
+            height: 55vh;
+
+            @media (max-width: $screen-md) {
+                height: 21vh;
+            }
+
+            @media (max-width: $screen-xs) {
+                height: 55vh;
+                margin: 5% 5%;
+            }
+        }
+
+        @media (max-width: $screen-xs) {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-right {
+        display: flex;
+        
+        > img {
+            height: 60vh;
+
+            @media (max-width: $screen-md) {
+                height: 25vh;
+            }
+        }
+        
+        @media (max-width: $screen-xs) {
+            display: none;            
+        }
+    }
+}

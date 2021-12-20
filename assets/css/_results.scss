@@ -1,0 +1,39 @@
+@import "./variables";
+@import "./card";
+
+.results {
+    background-color: $off-white;
+    color: $light-gray;
+    padding-bottom: 10%;
+    
+    &-title {
+        margin-left: 10%;
+        margin-right: 10%;
+
+        > img {
+            margin-top: 5%;
+            width: 10vw;
+
+            @media (max-width: $screen-xs) {
+                width: 25vw;
+                margin-top: 10%;
+            }
+        }
+
+        > h2 {
+            font-size: 3.8rem;
+            color: #0C261C;
+            font-weight: 700;
+            margin-bottom: 5%;
+
+            @media (max-width: $screen-xs) {
+                font-size: 2.5rem;
+                margin-bottom: 6%;
+            }
+        }
+    }
+
+    &-hidden {
+        display: none;
+    }
+}

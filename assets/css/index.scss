@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./hero";
+@import "./results";
+@import "./no-results";
+@import "./filter";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $montserrat;
+    font-size: 14px;
+    background-color: $white;
+}
